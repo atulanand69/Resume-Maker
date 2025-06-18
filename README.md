@@ -212,4 +212,4 @@ If you have any questions or need help, please open an issue on GitHub.
 
 ---
 
-**Created with ❤️ by Atul Anand & Ansh Gupta** 
+**Created with ❤️ by Atul Anand**
