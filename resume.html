@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Create Your Professional Resume - Best Resume Builder</title>
+    <meta name="description"
+        content="Build your professional resume with our easy-to-use builder. Choose from multiple templates and create a winning resume in minutes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="resume builder, CV maker, professional resume, job application">
+    <meta name="author" content="Best Resume">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/curriculum-vitae.png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar bg-white" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="index.html" class="navbar-brand" aria-label="Best Resume - Home">
+                    <img src="assets/images/curriculum-vitae.png" alt="Resume Builder Logo" class="navbar-brand-icon">
+                    <span class="navbar-brand-text">Best <span>Resume</span></span>
+                </a>
+
+                <button type="button" class="navbar-toggler-btn" aria-label="Toggle navigation menu"
+                    aria-expanded="false">
+                    <div class="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Template Selector -->
+    <section class="template-selector non_print_area">
+        <div class="container">
+            <div class="template-selector-content">
+                <h2 class="section-title">Choose Your Template</h2>
+                <p class="section-subtitle">Select a professional template that matches your industry and experience
+                    level</p>
+
+                <div class="template-grid">
+                    <div class="template-card active" data-template="modern">
+                        <div class="template-preview">
+                            <div class="template-header">
+                                <div class="template-name">John Doe</div>
+                                <div class="template-title">Software Engineer</div>
+                            </div>
+                            <div class="template-sections">
+                                <div class="template-section">Experience</div>
+                                <div class="template-section">Education</div>
+                                <div class="template-section">Skills</div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h4>Modern Professional</h4>
+                            <p>Clean, ATS-friendly design perfect for tech and corporate roles</p>
+                            <span class="template-tag">Most Popular</span>
+                        </div>
+                    </div>
+
+                    <div class="template-card" data-template="classic">
+                        <div class="template-preview classic">
+                            <div class="template-header classic">
+                                <div class="template-name">Sarah Johnson</div>
+                                <div class="template-title">Marketing Manager</div>
+                            </div>
+                            <div class="template-sections classic">
+                                <div class="template-section">Summary</div>
+                                <div class="template-section">Experience</div>
+                                <div class="template-section">Education</div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h4>Classic Traditional</h4>
+                            <p>Timeless format ideal for conservative industries and senior positions</p>
+                            <span class="template-tag">Traditional</span>
+                        </div>
+                    </div>
+
+                    <div class="template-card" data-template="minimal">
+                        <div class="template-preview minimal">
+                            <div class="template-header minimal">
+                                <div class="template-name">Alex Chen</div>
+                                <div class="template-title">UX Designer</div>
+                            </div>
+                            <div class="template-sections minimal">
+                                <div class="template-section">About</div>
+                                <div class="template-section">Work</div>
+                                <div class="template-section">Skills</div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h4>Minimal Creative</h4>
+                            <p>Simple, elegant design for creative professionals and startups</p>
+                            <span class="template-tag">Creative</span>
+                        </div>
+                    </div>
+
+                    <div class="template-card" data-template="executive">
+                        <div class="template-preview executive">
+                            <div class="template-header executive">
+                                <div class="template-name">Michael Brown</div>
+                                <div class="template-title">Chief Executive Officer</div>
+                            </div>
+                            <div class="template-sections executive">
+                                <div class="template-section">Executive Summary</div>
+                                <div class="template-section">Leadership</div>
+                                <div class="template-section">Achievements</div>
+                            </div>
+                        </div>
+                        <div class="template-info">
+                            <h4>Highly Professional</h4>
+                            <p>Sophisticated design for C-level executives and senior leaders</p>
+                            <span class="template-tag">Executive</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="about-sc" class="non_print_area">
+        <div class="container">
+            <div class="about-cnt">
+                <!-- Progress Indicator -->
+                <div class="progress-indicator mb-4">
+                    <div class="progress-steps">
+                        <div class="step active" data-step="1">
+                            <span class="step-number">1</span>
+                            <span class="step-label">Personal Info</span>
+                        </div>
+                        <div class="step" data-step="2">
+                            <span class="step-number">2</span>
+                            <span class="step-label">Experience</span>
+                        </div>
+                        <div class="step" data-step="3">
+                            <span class="step-number">3</span>
+                            <span class="step-label">Education</span>
+                        </div>
+                        <div class="step" data-step="4">
+                            <span class="step-number">4</span>
+                            <span class="step-label">Skills</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="cv-form" id="cv-form">
+                    <!-- Personal Information Section -->
+                    <div class="cv-form-blk">
+                        <div class="cv-form-row-title">
+                            <h3>Personal Information</h3>
+                            <p class="section-description">Start with your basic information and contact details</p>
+                        </div>
+                        <div class="cv-form-row cv-form-row-about">
+                            <div class="cols-3">
+                                <div class="form-elem">
+                                    <label for="firstname" class="form-label">First Name <span
+                                            class="required">*</span></label>
+                                    <input name="firstname" type="text" class="form-control firstname" id="firstname"
+                                        onkeyup="generateCV()" placeholder="e.g. John" required>
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class="form-elem">
+                                    <label for="middlename" class="form-label">Middle Name <span
+                                            class="opt-text">(optional)</span></label>
+                                    <input name="middlename" type="text" class="form-control middlename" id="middlename"
+                                        onkeyup="generateCV()" placeholder="e.g. Herbert">
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class="form-elem">
+                                    <label for="lastname" class="form-label">Last Name <span
+                                            class="required">*</span></label>
+                                    <input name="lastname" type="text" class="form-control lastname" id="lastname"
+                                        onkeyup="generateCV()" placeholder="e.g. Doe" required>
+                                    <span class="form-text"></span>
+                                </div>
+                            </div>
+
+                            <div class="cols-3">
+                                <div class="form-elem">
+                                    <label for="image" class="form-label">Profile Photo <span
+                                            class="opt-text">(optional)</span></label>
+                                    <input name="image" type="file" class="form-control image" id="image"
+                                        accept="image/*" onchange="previewImage()">
+                                    <span class="form-text">Recommended: Square image, max 2MB</span>
+                                </div>
+                                <div class="form-elem">
+                                    <label for="designation" class="form-label">Professional Title <span
+                                            class="required">*</span></label>
+                                    <input name="designation" type="text" class="form-control designation"
+                                        id="designation" onkeyup="generateCV()"
+                                        placeholder="e.g. Senior Software Engineer" required>
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class="form-elem">
+                                    <label for="address" class="form-label">Address <span
+                                            class="required">*</span></label>
+                                    <input name="address" type="text" class="form-control address" id="address"
+                                        onkeyup="generateCV()" placeholder="e.g. New York, NY" required>
+                                    <span class="form-text"></span>
+                                </div>
+                            </div>
+
+                            <div class="cols-3">
+                                <div class="form-elem">
+                                    <label for="email" class="form-label">Email Address <span
+                                            class="required">*</span></label>
+                                    <input name="email" type="email" class="form-control email" id="email"
+                                        onkeyup="generateCV()" placeholder="e.g. john.doe@email.com" required>
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class="form-elem">
+                                    <label for="phoneno" class="form-label">Phone Number <span
+                                            class="required">*</span></label>
+                                    <input name="phoneno" type="tel" class="form-control phoneno" id="phoneno"
+                                        onkeyup="generateCV()" placeholder="e.g. (555) 123-4567" required>
+                                    <span class="form-text"></span>
+                                </div>
+                                <div class="form-elem">
+                                    <label for="summary" class="form-label">Professional Summary <span
+                                            class="required">*</span></label>
+                                    <textarea name="summary" class="form-control summary" id="summary"
+                                        onkeyup="generateCV()"
+                                        placeholder="Brief overview of your professional background and career objectives"
+                                        rows="3" required></textarea>
+                                    <span class="form-text"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Achievements Section -->
+                    <div class="cv-form-blk">
+                        <div class="cv-form-row-title">
+                            <h3>Key Achievements</h3>
+                            <p class="section-description">Highlight your most significant accomplishments and awards
+                            </p>
+                        </div>
+
+                        <div class="row-separator repeater">
+                            <div class="repeater" data-repeater-list="group-a">
+                                <div data-repeater-item>
+                                    <div class="cv-form-row cv-form-row-achievement">
+                                        <div class="cols-2">
+                                            <div class="form-elem">
+                                                <label for="achieve_title" class="form-label">Achievement Title</label>
+                                                <input name="achieve_title" type="text"
+                                                    class="form-control achieve_title" onkeyup="generateCV()"
+                                                    placeholder="e.g. Employee of the Year 2023">
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="achieve_description" class="form-label">Description</label>
+                                                <textarea name="achieve_description"
+                                                    class="form-control achieve_description" onkeyup="generateCV()"
+                                                    placeholder="Brief description of the achievement and its impact"
+                                                    rows="2"></textarea>
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+                                        <button data-repeater-delete type="button" class="repeater-remove-btn"
+                                            aria-label="Remove achievement">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" data-repeater-create value="Add" class="repeater-add-btn"
+                                aria-label="Add achievement">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Experience Section -->
+                    <div class="cv-form-blk">
+                        <div class="cv-form-row-title">
+                            <h3>Work Experience</h3>
+                            <p class="section-description">List your relevant work experience, starting with the most
+                                recent</p>
+                        </div>
+
+                        <div class="row-separator repeater">
+                            <div class="repeater" data-repeater-list="group-b">
+                                <div data-repeater-item>
+                                    <div class="cv-form-row cv-form-row-experience">
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="exp_title" class="form-label">Job Title <span
+                                                        class="required">*</span></label>
+                                                <input name="exp_title" type="text" class="form-control exp_title"
+                                                    onkeyup="generateCV()" placeholder="e.g. Senior Developer" required>
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="exp_organization" class="form-label">Company <span
+                                                        class="required">*</span></label>
+                                                <input name="exp_organization" type="text"
+                                                    class="form-control exp_organization" onkeyup="generateCV()"
+                                                    placeholder="e.g. Tech Corp Inc." required>
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="exp_location" class="form-label">Location</label>
+                                                <input name="exp_location" type="text" class="form-control exp_location"
+                                                    onkeyup="generateCV()" placeholder="e.g. San Francisco, CA">
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="exp_start_date" class="form-label">Start Date <span
+                                                        class="required">*</span></label>
+                                                <input name="exp_start_date" type="date"
+                                                    class="form-control exp_start_date" onkeyup="generateCV()" required>
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="exp_end_date" class="form-label">End Date</label>
+                                                <input name="exp_end_date" type="date" class="form-control exp_end_date"
+                                                    onkeyup="generateCV()">
+                                                <span class="form-text">Leave empty if current position</span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="exp_description" class="form-label">Job Description <span
+                                                        class="required">*</span></label>
+                                                <textarea name="exp_description" class="form-control exp_description"
+                                                    onkeyup="generateCV()"
+                                                    placeholder="Describe your responsibilities and achievements"
+                                                    rows="3" required></textarea>
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <button data-repeater-delete type="button" class="repeater-remove-btn"
+                                            aria-label="Remove experience">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" data-repeater-create value="Add" class="repeater-add-btn"
+                                aria-label="Add experience">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Education Section -->
+                    <div class="cv-form-blk">
+                        <div class="cv-form-row-title">
+                            <h3>Education</h3>
+                            <p class="section-description">List your educational background and qualifications</p>
+                        </div>
+
+                        <div class="row-separator repeater">
+                            <div class="repeater" data-repeater-list="group-c">
+                                <div data-repeater-item>
+                                    <div class="cv-form-row cv-form-row-experience">
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="edu_school" class="form-label">Institution <span
+                                                        class="required">*</span></label>
+                                                <input name="edu_school" type="text" class="form-control edu_school"
+                                                    onkeyup="generateCV()" placeholder="e.g. University of California"
+                                                    required>
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="edu_degree" class="form-label">Degree <span
+                                                        class="required">*</span></label>
+                                                <input name="edu_degree" type="text" class="form-control edu_degree"
+                                                    onkeyup="generateCV()"
+                                                    placeholder="e.g. Bachelor of Science in Computer Science" required>
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="edu_city" class="form-label">City</label>
+                                                <input name="edu_city" type="text" class="form-control edu_city"
+                                                    onkeyup="generateCV()" placeholder="e.g. Berkeley, CA">
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="edu_passed_year" class="form-label">Passed Year</label>
+                                                <input name="edu_passed_year" type="number"
+                                                    class="form-control edu_passed_year" min="1900" max="2099" step="1"
+                                                    onkeyup="generateCV()" placeholder="e.g. 2025">
+                                                <span class="form-text"></span>
+                                            </div>
+
+                                            <div class="form-elem">
+                                                <label for="edu_graduation_date" class="form-label">Graduation Date
+                                                    <span class="required">*</span></label>
+                                                <input name="edu_graduation_date" type="date"
+                                                    class="form-control edu_graduation_date" onkeyup="generateCV()"
+                                                    required>
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="edu_description" class="form-label">Additional
+                                                    Details</label>
+                                                <textarea name="edu_description" class="form-control edu_description"
+                                                    onkeyup="generateCV()"
+                                                    placeholder="GPA, honors, relevant coursework, etc."
+                                                    rows="2"></textarea>
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+
+                                        <button data-repeater-delete type="button" class="repeater-remove-btn"
+                                            aria-label="Remove education">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" data-repeater-create value="Add" class="repeater-add-btn"
+                                aria-label="Add education">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Projects Section -->
+                    <div class="cv-form-blk">
+                        <div class="cv-form-row-title">
+                            <h3>Projects</h3>
+                            <p class="section-description">Showcase your portfolio projects and technical skills</p>
+                        </div>
+
+                        <div class="row-separator repeater">
+                            <div class="repeater" data-repeater-list="group-d">
+                                <div data-repeater-item>
+                                    <div class="cv-form-row cv-form-row-experience">
+                                        <div class="cols-3">
+                                            <div class="form-elem">
+                                                <label for="proj_title" class="form-label">Project Name <span
+                                                        class="required">*</span></label>
+                                                <input name="proj_title" type="text" class="form-control proj_title"
+                                                    onkeyup="generateCV()" placeholder="e.g. E-commerce Platform"
+                                                    required>
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="proj_link" class="form-label">Project Link</label>
+                                                <input name="proj_link" type="url" class="form-control proj_link"
+                                                    onkeyup="generateCV()"
+                                                    placeholder="e.g. https://github.com/username/project">
+                                                <span class="form-text"></span>
+                                            </div>
+                                            <div class="form-elem">
+                                                <label for="proj_description" class="form-label">Description <span
+                                                        class="required">*</span></label>
+                                                <textarea name="proj_description" class="form-control proj_description"
+                                                    onkeyup="generateCV()"
+                                                    placeholder="Describe the project, technologies used, and your role"
+                                                    rows="3" required></textarea>
+                                                <span class="form-text"></span>
+                                            </div>
+                                        </div>
+                                        <button data-repeater-delete type="button" class="repeater-remove-btn"
+                                            aria-label="Remove project">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" data-repeater-create value="Add" class="repeater-add-btn"
+                                aria-label="Add project">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Skills Section -->
+                    <div class="cv-form-blk">
+                        <div class="cv-form-row-title">
+                            <h3>Skills</h3>
+                            <p class="section-description">List your technical and soft skills</p>
+                        </div>
+
+                        <div class="row-separator repeater">
+                            <div class="repeater" data-repeater-list="group-e">
+                                <div data-repeater-item>
+                                    <div class="cv-form-row cv-form-row-skills">
+                                        <div class="form-elem">
+                                            <label for="skill" class="form-label">Skill</label>
+                                            <input name="skill" type="text" class="form-control skill"
+                                                onkeyup="generateCV()"
+                                                placeholder="e.g. JavaScript, Project Management, Leadership">
+                                            <span class="form-text"></span>
+                                        </div>
+
+                                        <button data-repeater-delete type="button" class="repeater-remove-btn"
+                                            aria-label="Remove skill">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                stroke="currentColor" stroke-width="2">
+                                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" data-repeater-create value="Add" class="repeater-add-btn"
+                                aria-label="Add skill">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview Section -->
+    <section id="preview-sc" class="print_area">
+        <div class="container">
+            <!-- Modern Template (Default) -->
+            <div class="preview-cnt template-modern" id="template-modern">
+                <div class="preview-cnt-l bg-primary text-white">
+                    <div class="preview-blk">
+                        <div class="preview-image">
+                            <img src="" alt="Profile Photo" id="image_dsp">
+                        </div>
+                        <div class="preview-item preview-item-name">
+                            <span class="preview-item-val fw-600" id="fullname_dsp"></span>
+                        </div>
+                        <div class="preview-item">
+                            <span class="preview-item-val text-uppercase fw-600 ls-1" id="designation_dsp"></span>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk">
+                        <div class="preview-blk-title">
+                            <h3>Contact Information</h3>
+                        </div>
+                        <div class="preview-blk-list">
+                            <div class="preview-item">
+                                <span class="preview-item-val" id="phoneno_dsp"></span>
+                            </div>
+                            <div class="preview-item">
+                                <span class="preview-item-val" id="email_dsp"></span>
+                            </div>
+                            <div class="preview-item">
+                                <span class="preview-item-val" id="address_dsp"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk">
+                        <div class="preview-blk-title">
+                            <h3>Professional Summary</h3>
+                        </div>
+                        <div class="preview-blk-list">
+                            <div class="preview-item">
+                                <span class="preview-item-val" id="summary_dsp"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk">
+                        <div class="preview-blk-title">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="skills-items preview-blk-list" id="skills_dsp">
+                            <!-- skills list here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="preview-cnt-r bg-white">
+                    <div class="preview-blk">
+                        <div class="preview-blk-title">
+                            <h3>Key Achievements</h3>
+                        </div>
+                        <div class="achievements-items preview-blk-list" id="achievements_dsp"></div>
+                    </div>
+
+                    <div class="preview-blk">
+                        <div class="preview-blk-title">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="educations-items preview-blk-list" id="educations_dsp"></div>
+                    </div>
+
+                    <div class="preview-blk">
+                        <div class="preview-blk-title">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="experiences-items preview-blk-list" id="experiences_dsp"></div>
+                    </div>
+
+                    <div class="preview-blk">
+                        <div class="preview-blk-title">
+                            <h3>Projects</h3>
+                        </div>
+                        <div class="projects-items preview-blk-list" id="projects_dsp"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Classic Template -->
+            <div class="preview-cnt template-classic" id="template-classic" style="display: none;">
+                <div class="preview-cnt-classic bg-white">
+                    <div class="preview-header-classic">
+                        <div class="preview-name-classic">
+                            <span class="preview-item-val fw-700" id="fullname_dsp_classic"></span>
+                        </div>
+                        <div class="preview-title-classic">
+                            <span class="preview-item-val fw-600" id="designation_dsp_classic"></span>
+                        </div>
+                        <div class="preview-contact-classic">
+                            <span class="preview-item-val" id="phoneno_dsp_classic"></span> |
+                            <span class="preview-item-val" id="email_dsp_classic"></span> |
+                            <span class="preview-item-val" id="address_dsp_classic"></span>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk-classic">
+                        <div class="preview-blk-title-classic">
+                            <h3>Professional Summary</h3>
+                        </div>
+                        <div class="preview-blk-content-classic">
+                            <span class="preview-item-val" id="summary_dsp_classic"></span>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk-classic">
+                        <div class="preview-blk-title-classic">
+                            <h3>Work Experience</h3>
+                        </div>
+                        <div class="experiences-items-classic" id="experiences_dsp_classic"></div>
+                    </div>
+
+                    <div class="preview-blk-classic">
+                        <div class="preview-blk-title-classic">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="educations-items-classic" id="educations_dsp_classic"></div>
+                    </div>
+
+                    <div class="preview-blk-classic">
+                        <div class="preview-blk-title-classic">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="skills-items-classic" id="skills_dsp_classic"></div>
+                    </div>
+
+                    <div class="preview-blk-classic">
+                        <div class="preview-blk-title-classic">
+                            <h3>Key Achievements</h3>
+                        </div>
+                        <div class="achievements-items-classic" id="achievements_dsp_classic"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Minimal Template -->
+            <div class="preview-cnt template-minimal" id="template-minimal" style="display: none;">
+                <div class="preview-cnt-minimal bg-white">
+                    <div class="preview-header-minimal">
+                        <div class="preview-name-minimal">
+                            <span class="preview-item-val fw-800" id="fullname_dsp_minimal"></span>
+                        </div>
+                        <div class="preview-title-minimal">
+                            <span class="preview-item-val fw-500" id="designation_dsp_minimal"></span>
+                        </div>
+                        <div class="preview-contact-minimal">
+                            <span class="preview-item-val" id="email_dsp_minimal"></span> •
+                            <span class="preview-item-val" id="phoneno_dsp_minimal"></span> •
+                            <span class="preview-item-val" id="address_dsp_minimal"></span>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk-minimal">
+                        <div class="preview-blk-title-minimal">
+                            <h3>About</h3>
+                        </div>
+                        <div class="preview-blk-content-minimal">
+                            <span class="preview-item-val" id="summary_dsp_minimal"></span>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk-minimal">
+                        <div class="preview-blk-title-minimal">
+                            <h3>Work</h3>
+                        </div>
+                        <div class="experiences-items-minimal" id="experiences_dsp_minimal"></div>
+                    </div>
+
+                    <div class="preview-blk-minimal">
+                        <div class="preview-blk-title-minimal">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="educations-items-minimal" id="educations_dsp_minimal"></div>
+                    </div>
+
+                    <div class="preview-blk-minimal">
+                        <div class="preview-blk-title-minimal">
+                            <h3>Skills</h3>
+                        </div>
+                        <div class="skills-items-minimal" id="skills_dsp_minimal"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Executive Template -->
+            <div class="preview-cnt template-executive" id="template-executive" style="display: none;">
+                <div class="preview-cnt-executive bg-white">
+                    <div class="preview-header-executive">
+                        <div class="preview-name-executive">
+                            <span class="preview-item-val fw-700" id="fullname_dsp_executive"></span>
+                        </div>
+                        <div class="preview-title-executive">
+                            <span class="preview-item-val fw-600" id="designation_dsp_executive"></span>
+                        </div>
+                        <div class="preview-contact-executive">
+                            <span class="preview-item-val" id="email_dsp_executive"></span> |
+                            <span class="preview-item-val" id="phoneno_dsp_executive"></span> |
+                            <span class="preview-item-val" id="address_dsp_executive"></span>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk-executive">
+                        <div class="preview-blk-title-executive">
+                            <h3>Executive Summary</h3>
+                        </div>
+                        <div class="preview-blk-content-executive">
+                            <span class="preview-item-val" id="summary_dsp_executive"></span>
+                        </div>
+                    </div>
+
+                    <div class="preview-blk-executive">
+                        <div class="preview-blk-title-executive">
+                            <h3>Leadership Experience</h3>
+                        </div>
+                        <div class="experiences-items-executive" id="experiences_dsp_executive"></div>
+                    </div>
+
+                    <div class="preview-blk-executive">
+                        <div class="preview-blk-title-executive">
+                            <h3>Key Achievements</h3>
+                        </div>
+                        <div class="achievements-items-executive" id="achievements_dsp_executive"></div>
+                    </div>
+
+                    <div class="preview-blk-executive">
+                        <div class="preview-blk-title-executive">
+                            <h3>Education & Certifications</h3>
+                        </div>
+                        <div class="educations-items-executive" id="educations_dsp_executive"></div>
+                    </div>
+
+                    <div class="preview-blk-executive">
+                        <div class="preview-blk-title-executive">
+                            <h3>Core Competencies</h3>
+                        </div>
+                        <div class="skills-items-executive" id="skills_dsp_executive"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Action Buttons -->
+    <section class="print-btn-sc non_print_area">
+        <div class="container">
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary" onclick="printCV()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="6,9 6,2 18,2 18,9"></polyline>
+                        <path d="M6,18H4a2,2 0 0,1 -2,-2V11a2,2 0 0,1 2,-2H20a2,2 0 0,1 2,2v5a2,2 0 0,1 -2,2H18"></path>
+                        <polyline points="6,14 6,22 18,22 18,14"></polyline>
+                    </svg>
+                    Print Resume
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="downloadPDF()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7,10 12,15 17,10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Download PDF
+                </button>
+                <button type="button" class="btn btn-outline" onclick="saveResume()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
+                        <polyline points="17,21 17,13 7,13 7,21"></polyline>
+                        <polyline points="7,3 7,8 15,8"></polyline>
+                    </svg>
+                    Save Draft
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.4.js"
+        integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.repeater/1.2.1/jquery.repeater.js"
+        integrity="sha512-bZAXvpVfp1+9AUHQzekEZaXclsgSlAeEnMJ6LfFAvjqYUVZfcuVXeQoN5LhD7Uw0Jy4NCY9q3kbdEXbwhZUmUQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
